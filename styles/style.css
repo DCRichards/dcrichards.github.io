@@ -1,0 +1,36 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-family: Monaco, Consolas, "Lucida Console", monospace;
+    font-size: 2.75em;
+    color: #FFF;
+    background-color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: #2f578d;
+}
+
+.text_section {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+}
+
+.info, .plugs {
+    font-size: 1em;
+}
+
+.info {
+    color: #000000;
+}
+
+.plugs {
+    color: #000000;
+}
+
+
