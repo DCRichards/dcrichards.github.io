@@ -5,9 +5,7 @@
 }
 
 body {
-    background-image: url("/resc/gradient_background.jpg");
-    background-repeat: no-repeat;
-    background-position: center right;
+    background-color: #222121;
 }
 
 h1 {
