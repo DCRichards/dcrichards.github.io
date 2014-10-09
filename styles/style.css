@@ -1,36 +1,81 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    color: #fff;
+}
+
+body {
+    background-image: url("/resc/gradient_background.jpg");
+    background-repeat: no-repeat;
+    background-position: center right;
 }
 
 h1 {
-    font-family: Monaco, Consolas, "Lucida Console", monospace;
+    font-family: "Andale Mono", AndaleMono, monospace;
     font-size: 2.75em;
-    color: #FFF;
-    background-color: #000;
+    text-align: left;
 }
 
 a {
     text-decoration: none;
-    color: #2f578d;
+    color: #f77bc7;
+}
+
+.menu {
+    font-family: "Andale Mono", AndaleMono, monospace;
+    position: relative;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.menu a:hover .fa {
+    color: #f77bc7;
+}
+
+.collosal_cave {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-family: "Andale Mono", AndaleMono, monospace;
+    font-size: 1.5em;
+    color: #275762;
+}
+
+.collosal_cave a {
+    font-family: "Andale Mono", AndaleMono, monospace;
+    color: #275762;
+}
+
+.collosal_cave a:hover {
+    text-decoration: underline;
+    color: #275762;
+}
+
+.spacer i {
+    font-size: 2em;
+}
+
+.profile {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    font-size: 1.5em;
 }
 
 .text_section {
     margin-left: auto;
     margin-right: auto;
-    max-width: 70%;
+    max-width: 90%;
+    font-size: 1.5em;
 }
 
-.info, .plugs {
-    font-size: 1em;
+.text_section span {
+    margin-bottom: 10px;
 }
 
-.info {
-    color: #000000;
+.spare_time {
+    font-style: italic;
+    font-size: 0.9em;
+    margin-top: 40px;
 }
-
-.plugs {
-    color: #000000;
-}
-
-
