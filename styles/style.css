@@ -45,13 +45,12 @@ a {
 }
 
 .interests {
-    margin-top: 30px;
+    margin-top: 50px;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
     width: 70%;
     font-size: 1.3em;
-
 }
 
 .newsfeed {
@@ -63,4 +62,9 @@ a {
     border: 2px solid #2f2f2f;
     border-radius: 10px;
     background-color: #2f2f2f;
+}
+
+.contact {
+    color: #C0C0C0;
+    margin-top: 20px;
 }
