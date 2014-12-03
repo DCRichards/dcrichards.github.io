@@ -10,7 +10,7 @@ body {
 
 h1 {
     font-family: "Andale Mono", AndaleMono, monospace;
-    font-size: 2.75em;
+    font-size: 2em;
     text-align: left;
 }
 
@@ -23,7 +23,7 @@ a {
     font-family: "Andale Mono", AndaleMono, monospace;
     position: relative;
     float: right;
-    margin-top: 10px;
+    margin-top: 0px;
     margin-right: 10px;
 }
 
@@ -31,56 +31,6 @@ a {
     color: #f77bc7;
 }
 
-.collosal_cave {
-    margin-top: 50px;
-    margin-bottom: 40px;
-    font-family: "Andale Mono", AndaleMono, monospace;
-    font-size: 1.5em;
-    color: #275762;
-}
-
-.collosal_cave a {
-    font-family: "Andale Mono", AndaleMono, monospace;
-    color: #275762;
-}
-
-.collosal_cave a:hover {
-    text-decoration: underline;
-    color: #275762;
-}
-
 .spacer i {
     font-size: 2em;
-}
-
-.text_wrapper {
-    padding: 12px;
-    max-width: 90%;
-    margin-right: auto;
-    margin-left: auto;
-    border: 2px solid #FFF;
-    border-radius: 10px;
-}
-
-.profile {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-    font-size: 1.5em;
-}
-
-.text_section {
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 1.5em;
-}
-
-.text_section span {
-    margin-bottom: 10px;
-}
-
-.spare_time {
-    font-style: italic;
-    font-size: 0.9em;
-    margin-top: 40px;
 }
