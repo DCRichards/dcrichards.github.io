@@ -1,0 +1,11 @@
+# Site settings
+title: "Rubber Duck Club"
+email: hello@dcrichards.me
+description: > # this means to ignore newlines until "baseurl:"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://dcrichards.me" # the base hostname & protocol for your site
+twitter_username: DCRichards24
+github_username:  DCRichards
+
+# Build settings
+markdown: kramdown
