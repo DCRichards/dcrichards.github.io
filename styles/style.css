@@ -22,7 +22,7 @@ h2 {
 
 a {
     text-decoration: none;
-    color: #f77bc7;
+    color: #61adc9;
 }
 
 .menu {
@@ -42,40 +42,40 @@ a {
 }
 
 .wrapper {
+    width: 600px;
+    padding: 10px;
     border: 2px solid #343333;
     border-radius: 10px;
     background-color: #343333;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
-    min-height: 200px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    overflow: hidden;
 }
 
 .highlight {
     color: #61adc9;
 }
 
-.profile_picture {
-    width: 25%;
+.picture_container {
     float: left;
-    margin-left: 20px;
-    margin-top: 10px;
+}
+
+.profile_picture {
+    width: 200px;
+    margin: 10px;
     border: 2px solid #343333;
     border-radius: 10px;
     background-color: #343333;
 }
 
 .profile_info {
+    width: 300px;
     line-height: 25px;
+    float: left;
+    margin-left: 50px
 }
 
-
 .profile_bio {
-    margin-top: 20px;
-    font-size: 1em;
-    color: #dbdbdb;
-    padding-left: 10px;
-    padding-right:10px;
+    clear: both;
+    font-size: 0.9em;
 }
