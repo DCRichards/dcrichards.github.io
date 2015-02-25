@@ -1,0 +1,19 @@
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>David Richards - Rubber Duck Club</title><description>a collection of learning and interesting things from my explorations in software, technology and other topics straight from the duck's ears.</description><link>http://localhost:2368/</link><generator>Ghost 0.5</generator><lastBuildDate>Mon, 19 Jan 2015 15:46:42 GMT</lastBuildDate><atom:link href="http://localhost:2368/author/david-richards/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Full of questions...</title><description>&lt;p&gt;Technology is &lt;strong&gt;crazy&lt;/strong&gt;, the other day they &lt;a href="http://www.nasa.gov/mission_pages/station/research/news/3Dratchet_wrench/#.VLZ59oqsU4Q"&gt;3D printed a wrench&lt;/a&gt; in space. Needless to say B&amp;amp;Q are going to have to do well to top that. The novelty of being able to find every screw and fitting ever created in human history has &lt;em&gt;nothing&lt;/em&gt; on NASA printing tools in space.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;BREAK. &lt;em&gt;How have you already digressed to DIY jokes, you've only just started blogging?&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Sorry, back on topic. Basically, despite spending a number of years now doing &lt;em&gt;software development&lt;/em&gt;, &lt;em&gt;coding&lt;/em&gt;, &lt;em&gt;computer science&lt;/em&gt;, &lt;em&gt;bug creating&lt;/em&gt; or whatever title you want to give it, writing code that does stuff still continues to blow my mind a bit. And more interestingly it's both the code and the stuff that blows my mind.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;TL;DR&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I started this blog for various reasons, some of them in the hope of being a little more &lt;em&gt;hip&lt;/em&gt; and &lt;em&gt;cool&lt;/em&gt;. But aside from that, because I thought it would be cool to have this place as my sort of rubber duck. Somewhere to just throw it out there and to just keep track of interesting things I discover and maybe even create. I often find myself &lt;del&gt;jokingly&lt;/del&gt; reasonably seriously asking &lt;em&gt;what's the worst that could happen?!&lt;/em&gt; So let's find out, here's to giving this thing a go.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Rubber Ducks?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The title comes from the idea of &lt;a href="http://www.rubberduckdebugging.com/"&gt;rubber duck debugging&lt;/a&gt;. If you've ever solved a problem or fixed a bug through talking to yourself or a colleague or clueless friend without them saying a word, then you've joined the &lt;strong&gt;rubber duck club&lt;/strong&gt;.&lt;/p&gt;</description><link>http://localhost:2368/2015/01/14/full-of-questions/</link><guid isPermaLink="false">a4b66fe1-ceb3-4c3c-8d3a-a685b268154f</guid><dc:creator>David Richards</dc:creator><pubDate>Wed, 14 Jan 2015 15:03:02 GMT</pubDate></item></channel></rss>

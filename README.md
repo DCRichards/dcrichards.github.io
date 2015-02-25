@@ -1,8 +1,9 @@
-# DCRichards
+# dcrichards.me
 
-## This aint a project?!
-This is the current home of my personal page. I couldn't think of a good reason not to keep it open source and it's a chance to try out GitHub pages.
+An excuse to give some things a try, mainly:
 
-## He's a n00b!
+* GitHub Pages
+* [Ghost Blog Platform](https://ghost.org/)
+* [buster static site generator](https://github.com/axitkhurana/buster/)
 
-If you spot something wrong then let me know by raising an issue, every day's a school day after all!
+Suggestions and new ways to do this welcome!
