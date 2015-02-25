@@ -5,77 +5,42 @@
 }
 
 body {
-    background-color: #222121;
+    background-color: #2f2f2f !important;
 }
 
-h1 {
+h1.name {
+    color: #FFF;
     font-family: "Andale Mono", AndaleMono, monospace;
     font-size: 2em;
     text-align: left;
     margin-bottom: 30px;
 }
 
-h2 {
-    font-size: 1.6em
-    
+ul.nav {
+    margin-top: -5px;
+    margin-right: 5px;
 }
 
-a {
-    text-decoration: none;
-    color: #61adc9;
-}
-
-.menu {
+ul.nav li {
     font-family: "Andale Mono", AndaleMono, monospace;
-    position: relative;
-    float: right;
-    margin-top: 0px;
-    margin-right: 10px;
+    font-size: 1em;
 }
 
-.menu a:hover .fa {
+ul.nav li a {
+    padding-bottom: 0px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 0px;
+}
+
+ul.nav a:hover .fa {
     color: #f77bc7;
+}
+
+ul.nav li a:hover {
+    background-color: #2f2f2f;
 }
 
 .spacer i {
     font-size: 2em;
-}
-
-.wrapper {
-    width: 600px;
-    padding: 10px;
-    border: 2px solid #343333;
-    border-radius: 10px;
-    background-color: #343333;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
-}
-
-.highlight {
-    color: #61adc9;
-}
-
-.picture_container {
-    float: left;
-}
-
-.profile_picture {
-    width: 200px;
-    margin: 10px;
-    border: 2px solid #343333;
-    border-radius: 10px;
-    background-color: #343333;
-}
-
-.profile_info {
-    width: 300px;
-    line-height: 25px;
-    float: left;
-    margin-left: 50px
-}
-
-.profile_bio {
-    clear: both;
-    font-size: 0.9em;
 }
