@@ -47,7 +47,8 @@ ul.nav li a:hover {
 }
 
 .panel.info-panel {
-    max-width: 80%;
+    max-width: 90%;
+    min-height: 300px;
     margin: 0 auto;
 }
 
@@ -84,15 +85,20 @@ ul.nav li a:hover {
 }
 
 .panel.info-panel.panel-default .panel-body {
+    width: 100%;
     color: #000;
 }
 
-.panel.info-panel.panel-default .panel-body .info-panel .left-panel,.right-panel {
+.panel.info-panel.panel-default .panel-body .row {
+    width: 100%;
+    margin: 0 auto;
     color: #000;
 }
 
-.panel.info-panel.panel-default .panel-body .info-panel .left-panel .bio {
-    text-align: justify;
-    text-justify: inter-word;
+.panel.info-panel.panel-default .panel-body .bio {
+    color: #000;
+}
+
+.panel.info-panel.panel-default .panel-body .bio .col-md-12 {
     color: #000;
 }
