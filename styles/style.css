@@ -87,7 +87,7 @@ img.profile-image {
     color: #000;
 }
 
-.panel.info-panel.panel-default .panel-body h3 {
+.panel.info-panel.panel-default .panel-body .title {
     margin-top: 0px;
     margin-bottom: 5px;
     font-size: 2em;
