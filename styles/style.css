@@ -34,7 +34,7 @@ ul.nav li a {
 }
 
 ul.nav a:hover .fa {
-    color: #f77bc7;
+    color: #41a3d6;
 }
 
 ul.nav li a:hover {
@@ -46,8 +46,14 @@ ul.nav li a:hover {
     margin-top: 50px;
 }
 
+img.profile-image {
+    width: 130px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
 .panel.info-panel {
-    max-width: 90%;
+    max-width: 85%;
     min-height: 300px;
     margin: 0 auto;
 }
@@ -72,14 +78,6 @@ ul.nav li a:hover {
     color: #ff6464;
 }
 
-.panel.info-panel h3.panel-title .fa.minimise-button {
-    color: #ffc950;
-}
-
-.panel.info-panel h3.panel-title .fa.maximise-button {
-    color: #58b228;
-}
-
 .panel.info-panel h3.panel-title .fa {
     color: #434343;
 }
@@ -89,6 +87,15 @@ ul.nav li a:hover {
     color: #000;
 }
 
+.panel.info-panel.panel-default .panel-body h3 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 2em;
+    font-family: "Andale Mono", AndaleMono, monospace;
+    font-style: italic;
+    color: #3b3b3b;
+}
+
 .panel.info-panel.panel-default .panel-body .row {
     width: 100%;
     margin: 0 auto;
@@ -96,9 +103,34 @@ ul.nav li a:hover {
 }
 
 .panel.info-panel.panel-default .panel-body .bio {
-    color: #000;
+    color: #333;
+    font-size: 1em;
 }
 
-.panel.info-panel.panel-default .panel-body .bio .col-md-12 {
-    color: #000;
+.panel.info-panel.panel-default .panel-body .bio a {
+    color: #2277a3;
+    font-weight: 700;
+}
+
+.panel.info-panel.panel-default .panel-body .hello-message {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    color: #a7a7a7;
+    font-style: italic;
+}
+
+.panel .btn-default {
+    text-shadow: none;
+    background: #008daf;
+    border: 3px solid #008daf;
+    color: #fff;
+    -webkit-box-shadow: none;
+}
+
+.panel .btn-default:hover {
+    text-shadow: none;
+    background: #5c8496;
+    border: 3px solid #5c8496;
+    color: #fff;
+    -webkit-box-shadow: none;
 }
