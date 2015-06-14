@@ -124,8 +124,7 @@ h3.description_text {
     height: 600px;
     margin: 0;
     padding: 200px 0 260px 0;
-    background-size: cover;
-     
+    background-size: cover;    
 }
  
 #slide2 {
@@ -140,8 +139,7 @@ h3.description_text {
 #slide2 .medialinks {
     margin-left: auto;
     margin-right: auto;
-    width: 140px;
-    
+    width: 140px; 
 }
  
 #slide3 {
@@ -150,4 +148,10 @@ h3.description_text {
     height: 600px;
     padding: 120px 0 0 0;
     background-size: cover;
+}
+
+#slide3 .instagram_posts {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
