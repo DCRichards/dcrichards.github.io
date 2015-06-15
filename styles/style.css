@@ -121,7 +121,7 @@ h1.name {
 }
 
 #intro {
-    min-height: 610px;
+    min-height: 650px;
     margin: 0 auto; 
     width: 100%; 
     position: relative;
@@ -129,7 +129,7 @@ h1.name {
 }
 #about { 
     background: url(../resc/about.jpg) 100% 0 fixed; 
-    min-height: 610px;
+    min-height: 650px;
     height: auto;
     margin: 0 auto; 
     width: 100%; 
@@ -162,9 +162,8 @@ h1.name {
 
 #contact {
     background: url(../resc/contact.jpg) 100% 0 fixed;
-    min-height: 610px;
+    min-height: 650px;
     height: auto;
-    margin-top: 200px;
     margin: 0 auto; 
     width: 100%; 
     position: relative; 
@@ -201,7 +200,7 @@ h1.name {
 }
 
 .footer {
-    margin-top: 100px;
+    margin-top: 70px;
     font-size: 0.7em;
 }
 
