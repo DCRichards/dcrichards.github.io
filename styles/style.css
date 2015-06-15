@@ -53,9 +53,92 @@ ul.nav li a:hover {
     background-color: #2f2f2f;
 }
 
+.panel.info-panel {
+    max-width: 85%;
+    min-height: 300px;
+    margin: 0 auto;
+}
+
+.panel.info-panel.panel-default .panel-heading {
+    border: none;
+    background-image: none;
+    background-color: #d1d1d1;
+}
+
+.panel.info-panel h3.panel-title {
+    text-align: left;
+    font-weight: bold;
+}
+
+.panel.info-panel h3.panel-title span {
+    padding: 0px;
+    font-size: 0.9em;
+}
+
+.panel.info-panel h3.panel-title .fa.close-button {
+    color: #ff6464;
+}
+
+.panel.info-panel h3.panel-title .fa {
+    color: #434343;
+}
+
+.panel.info-panel.panel-default .panel-body {
+    width: 100%;
+    color: #000;
+}
+
+.panel.info-panel.panel-default .panel-body .title {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 2em;
+    font-family: "Andale Mono", AndaleMono, monospace;
+    font-style: italic;
+    color: #3b3b3b;
+}
+
+.panel.info-panel.panel-default .panel-body .row {
+    width: 100%;
+    margin: 0 auto;
+    color: #000;
+}
+
+.panel.info-panel.panel-default .panel-body .bio {
+    color: #333;
+    font-size: 1em;
+}
+
+.panel.info-panel.panel-default .panel-body .bio a {
+    color: #2277a3;
+    font-weight: 700;
+}
+
+.panel.info-panel.panel-default .panel-body .hello-message {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    color: #a7a7a7;
+    font-style: italic;
+}
+
+.panel .btn-default {
+    text-shadow: none;
+    background: #008daf;
+    border: 3px solid #008daf;
+    color: #fff;
+    -webkit-box-shadow: none;
+}
+
+.panel .btn-default:hover {
+    text-shadow: none;
+    background: #5c8496;
+    border: 3px solid #5c8496;
+    color: #fff;
+    -webkit-box-shadow: none;
+}
+
 /* content */
 #content {
-    
+    margin-top: 100px;
 }
 
 #intro {
