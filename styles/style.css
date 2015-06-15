@@ -17,42 +17,6 @@ h1.name {
     margin-bottom: 30px;
 }
 
-ul.nav {
-    margin-top: -5px;
-    margin-right: 5px;
-}
-
-ul.nav li {
-    font-size: 1em;
-}
-
-ul.nav li .nav-label {
-    font-size: 0.8em;
-}
-
-ul.nav li a {
-    padding-bottom: 0px;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-top: 0px;
-}
-
-ul.nav .nav-icon {
-    color: #2f2f2f;
-}
-
-ul.nav a:hover .fa.fa-circle {
-    color: #2f2f2f;
-}
-
-ul.nav a:hover .fa.nav-icon {
-    color: #FFF;
-}
-
-ul.nav li a:hover {
-    background-color: #2f2f2f;
-}
-
 .panel.info-panel {
     max-width: 100%;
     min-height: 300px;
@@ -152,6 +116,7 @@ ul.nav li a:hover {
 
 .highlighted {
     font-weight: bold;
+    font-size: 1.3em;
     color: #000;
 }
 
@@ -163,16 +128,7 @@ ul.nav li a:hover {
     padding: 0 0;
 }
 #about { 
-    background: url(../resc/desk.jpg) 100% 0 fixed; 
-    min-height: 600px;
-    height: auto;
-    margin: 0 auto; 
-    width: 100%; 
-    position: relative; 
-    box-shadow: 0 0 50px rgba(0,0,0,0.8);
-    padding: 200px 0;
-}
-#contact {
+    background: url(../resc/about.jpg) 100% 0 fixed; 
     min-height: 600px;
     height: auto;
     margin: 0 auto; 
@@ -180,5 +136,57 @@ ul.nav li a:hover {
     position: relative; 
     box-shadow: 0 0 50px rgba(0,0,0,0.8);
     padding: 100px 0;
+}
+#contact {
+    background: url(../resc/contact.jpg) 100% 0 fixed;
+    min-height: 580px;
+    height: auto;
+    margin-top: 200px;
+    margin: 0 auto; 
+    width: 100%; 
+    position: relative; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
     color: #fff;
+}
+
+#contact .container {
+    height: 100%;
+    width: 80%;
+    font-size: 1em;
+}
+
+#contact .container h1 {
+    font-family: 'Vollkorn', serif;
+    font-style: italic;
+    font-size: 3em;
+}
+
+.media-links {
+    margin-top: 150px;
+    font-size: 1.3em;
+}
+.media-links i.nav-icon.fa {
+    color: #333;
+}
+
+.media-links a {
+    padding: 3px;
+}
+
+.media-links i.fa {
+    color: #FFF;
+}
+
+.footer {
+    margin-top: 100px;
+    font-size: 0.7em;
+}
+
+.footer a {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+.footer a:hover {
+    color: #FFF;
 }
