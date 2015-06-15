@@ -54,7 +54,7 @@ ul.nav li a:hover {
 }
 
 .panel.info-panel {
-    max-width: 85%;
+    max-width: 100%;
     min-height: 300px;
     margin: 0 auto;
 }
@@ -109,15 +109,8 @@ ul.nav li a:hover {
 }
 
 .panel.info-panel.panel-default .panel-body .bio a {
-    color: #2277a3;
-    font-weight: 700;
-}
-
-.panel.info-panel.panel-default .panel-body .hello-message {
-    margin-bottom: 5px;
-    font-size: 1.2em;
-    color: #a7a7a7;
-    font-style: italic;
+    text-decoration: underline;
+    color: #000;
 }
 
 .panel .btn-default {
@@ -130,8 +123,16 @@ ul.nav li a:hover {
 
 .panel .btn-default:hover {
     text-shadow: none;
-    background: #5c8496;
-    border: 3px solid #5c8496;
+    background: #029ec4;
+    border: 3px solid #029ec4;
+    color: #fff;
+    -webkit-box-shadow: none;
+}
+
+.panel .btn-default:focus {
+    text-shadow: none;
+    background: #029ec4;
+    border: 3px solid #029ec4;
     color: #fff;
     -webkit-box-shadow: none;
 }
@@ -141,6 +142,19 @@ ul.nav li a:hover {
     margin-top: 100px;
 }
 
+.intro-info  {
+    color: #000;
+}
+
+.intro-info sup {
+    color: #000;
+}
+
+.highlighted {
+    font-weight: bold;
+    color: #000;
+}
+
 #intro {
     min-height: 500px;
     margin: 0 auto; 
@@ -148,17 +162,18 @@ ul.nav li a:hover {
     position: relative;
     padding: 0 0;
 }
-#home { 
+#about { 
     background: url(../resc/desk.jpg) 100% 0 fixed; 
-    height: auto;  
+    min-height: 600px;
+    height: auto;
     margin: 0 auto; 
     width: 100%; 
     position: relative; 
     box-shadow: 0 0 50px rgba(0,0,0,0.8);
     padding: 200px 0;
 }
-#about { 
-    background: url(../resc/about.png) 50% 0 fixed; 
+#contact {
+    min-height: 600px;
     height: auto;
     margin: 0 auto; 
     width: 100%; 
