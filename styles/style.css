@@ -1,5 +1,5 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Lato', sans-serif;
     text-align: center;
     color: #fff;
 }
@@ -17,43 +17,8 @@ h1.name {
     margin-bottom: 30px;
 }
 
-ul.nav {
-    margin-top: -5px;
-    margin-right: 5px;
-}
-
-ul.nav li {
-    font-size: 1em;
-}
-
-ul.nav li a {
-    padding-bottom: 0px;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-top: 0px;
-}
-
-ul.nav a:hover .fa {
-    color: #41a3d6;
-}
-
-ul.nav li a:hover {
-    background-color: #2f2f2f;
-}
-
-/* content */
-#content {
-    margin-top: 50px;
-}
-
-img.profile-image {
-    width: 130px;
-    margin: 15px;
-    border-radius: 10px;
-}
-
 .panel.info-panel {
-    max-width: 85%;
+    max-width: 100%;
     min-height: 300px;
     margin: 0 auto;
 }
@@ -108,15 +73,8 @@ img.profile-image {
 }
 
 .panel.info-panel.panel-default .panel-body .bio a {
-    color: #2277a3;
-    font-weight: 700;
-}
-
-.panel.info-panel.panel-default .panel-body .hello-message {
-    margin-bottom: 5px;
-    font-size: 1.2em;
-    color: #a7a7a7;
-    font-style: italic;
+    text-decoration: underline;
+    color: #000;
 }
 
 .panel .btn-default {
@@ -129,8 +87,129 @@ img.profile-image {
 
 .panel .btn-default:hover {
     text-shadow: none;
-    background: #5c8496;
-    border: 3px solid #5c8496;
+    background: #029ec4;
+    border: 3px solid #029ec4;
     color: #fff;
     -webkit-box-shadow: none;
+}
+
+.panel .btn-default:focus {
+    text-shadow: none;
+    background: #029ec4;
+    border: 3px solid #029ec4;
+    color: #fff;
+    -webkit-box-shadow: none;
+}
+
+/* content */
+#content {
+    margin-top: 100px;
+}
+
+.intro-info  {
+    color: #000;
+}
+
+.intro-info sup {
+    color: #000;
+}
+
+.highlighted {
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #000;
+}
+
+#intro {
+    min-height: 500px;
+    margin: 0 auto; 
+    width: 100%; 
+    position: relative;
+    padding: 0 0;
+}
+#about { 
+    background: url(../resc/about.jpg) 100% 0 fixed; 
+    min-height: 600px;
+    height: auto;
+    margin: 0 auto; 
+    width: 100%; 
+    position: relative; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+
+#about .container h1 {
+    font-size: 3em;
+}
+
+#about .profile {
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+
+#about .profile i.nav-icon {
+    color: #333;
+}
+
+#about a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+#about a:hover {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+#contact {
+    background: url(../resc/contact.jpg) 100% 0 fixed;
+    min-height: 580px;
+    height: auto;
+    margin-top: 200px;
+    margin: 0 auto; 
+    width: 100%; 
+    position: relative; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    color: #fff;
+}
+
+#contact .container {
+    height: 100%;
+    width: 80%;
+    font-size: 1em;
+}
+
+#contact .container h1 {
+    font-family: 'Vollkorn', serif;
+    font-style: italic;
+    font-size: 3em;
+}
+
+.media-links {
+    margin-top: 150px;
+    font-size: 1.3em;
+}
+.media-links i.nav-icon.fa {
+    color: #333;
+}
+
+.media-links a {
+    padding: 3px;
+}
+
+.media-links i.fa {
+    color: #FFF;
+}
+
+.footer {
+    margin-top: 100px;
+    font-size: 0.7em;
+}
+
+.footer a {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+.footer a:hover {
+    color: #FFF;
 }

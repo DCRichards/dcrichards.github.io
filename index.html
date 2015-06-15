@@ -8,6 +8,8 @@
         
         <link rel="stylesheet" type="text/css" href="styles/style.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,100italic,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
         
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
@@ -23,43 +25,17 @@
     <body>
         
         <div class="header">
-            <!-- menu -->
-            <ul class="nav nav-pills pull-right">
-                <li>
-                    <a href="http://uk.linkedin.com/in/dcrichards24">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-square-o fa-stack-2x"></i>
-                            <i class="fa fa-linkedin fa-stack-1x"></i>
-                        </span>
-                    </a>
-                    about
-                </li>
-                <li role="presentation">
-                    <a href="http://github.com/DCRichards">
-                    <span class="fa-stack fa-lg">
-                        <i class="fa fa-square-o fa-stack-2x"></i>
-                        <i class="fa fa-github fa-stack-1x"></i>
-                    </span> 
-                    </a>
-                    code
-                </li>
-                
-                <li>
-                    <a href="/blog/">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-square-o fa-stack-2x"></i>
-                            <i class="fa fa-book fa-stack-1x"></i>
-                        </span>
-                    </a>
-                    blog
-                </li>
-            </ul>
+            
             <!-- name heading -->
             <h1 class="name">$ David Richards<span class="cursor">_</span></h1>
         </div>
         
         <div id="content">
-            <div class="panel panel-default info-panel">
+            
+            <!-- Section 1 -->
+            <section id="intro" data-speed="6" data-type="background">
+                <div class="container">
+                    <div class="panel panel-default info-panel">
                 <div id="panel-heading-window-bar" class="panel-heading">
                     <h3 class="panel-title">
                         <span class="fa-stack fa-lg">
@@ -69,28 +45,144 @@
                     </h3>
                 </div>
                 <div class="panel-body">
-                    <div class="profile-image-wrapper">
-                        <img class="profile-image" src="resc/profile.jpg"/>
-                    </div>
                     <div class="row">
                         <div class="bio col-md-12">
-                            I'm a final year BSc Computer Science student at <a href="http://www.sussex.ac.uk/informatics/">Sussex</a>. I spent last year working at <a href="http://mobbu.com/">mobbu</a> on some great projects involving web and mobile applications. Now I'm back at Sussex working on my final year project, developing applications using the <a href="http://getpebble.com/">Pebble Smartwatch</a>. I've also been working with the team at <a href="http://hexology.co">Hexology</a> on their latest project.
-                            <br />
+                            <div class="intro-info">
+                                <div class="highlighted">Hi, I'm David, a software developer based in Brighton, UK.</div>
+                                <br />
+                                I graduated with a First Class in Computer Science from the <a href="http://www.sussex.ac.uk/informatics/">University of Sussex</a> and have experience in developing for web, mobile and wearable technologies.
+                                <br />
+                                <br />
+                                Okay great, let me...
+                            </div>
                         </div>
                     </div
                     <br />
                     <br />
                     <div class="contact-me">
-                        <div class="hello-message">
-                        want to know more?
-                        </div>
-                        <a href="mailto:dcrichards@live.co.uk">
-                            <button type="button" class="btn btn-default btn-lg">say hello!</button>
+                        
+                        <a href="#about">
+                            <button type="button" class="btn btn-default btn-lg">find out more</button>
+                        </a>
+                        <a href="#contact">
+                            <button type="button" class="btn btn-default btn-lg">get in touch</button>
                         </a>
                     </div>
                 </div>
             </div>
+                </div>
+                    <br />
+                        <br />
+                    <a href="#about"><i class="fa fa-long-arrow-down fa-4x"></i></a> 
+            </section>
+            
+            <!-- Section 2 -->
+            <section id="about" data-speed="4" data-type="background">
+                <div class="container">
+                    <h1>ALL ABOUT ME</h1>
+                    <div class="profile">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="nav-icon fa fa-university fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <br />
+                        BSc Computer Science (with an Industrial Placement Year), First Class
+                        <br />
+                        Thesis: <i>Two-Factor Authentication in Wearable Technologies</i>
+                        <br />
+                        University of Sussex
+                        <br />
+                        <br />
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="nav-icon fa fa-briefcase fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <br />
+                        Intern Developer - <a href="http://mobbu.com/">Mobbu</a>
+                        <br />
+                        Aug 2013 - Aug 2014
+                        <br />
+                        <br />
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="nav-icon fa fa-code fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <br />
+                        Java, JavaScript
+                        <br />
+                        RESTful Web Services (Java, Node.js)
+                        <br />
+                        Cross-platform mobile applications (<a href="https://cordova.apache.org/">Apache Cordova</a>)
+                        <br />
+                        <a href="http://getpebble.com/">Pebble Smartwatch</a> development (C, JavaScript)
+                        <br />
+                        Test Automation (Grunt, Ant, QUnit/Jasmine, CasperJS, PhantomJS)
+                        <br />
+                        <br />
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="nav-icon fa fa-check fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <br />
+                        Agile/Scrum Development
+                        <br />
+                        Git, Subversion, Jenkins CI, UNIX Command Line
+                        
+                        <br />
+                        <br />
+                        <a href="#contact"><i class="fa fa-long-arrow-down fa-4x"></i></a> 
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Section 3 -->
+            <section id="contact" data-speed="2" data-type="background">
+                <div class="container">
+                    <h1>"let's talk..."</h1>
+                    <br />
+                    <h4>I'd love to hear from you if you think I'd be a great fit for your organisation or project or if you'd just like to know more about what I do.</h4>
+                    
+                    <div class="media-links">
+                    <a href="http://uk.linkedin.com/in/dcrichards24">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="nav-icon fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                
+                    <a href="http://github.com/DCRichards">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="nav-icon fa fa-github fa-stack-1x fa-inverse"></i>
+                    </span>
+                    </a>
+                    
+                    <a href="/blog/">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="nav-icon fa fa-pencil fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                        
+                    <a href="mailto:dcrichards@live.co.uk">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="nav-icon fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                        
+                    </div>
+                    <br />
+                    <br />
+                </div>
+                <div class="footer">
+                    David Richards | 2015 | Proudly hosted by <a href="https://pages.github.com/">GitHub Pages</a>
+                </div>
+            </section>
+            
         </div>
+            
+        
         
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>

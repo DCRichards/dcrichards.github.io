@@ -1,9 +1,3 @@
-/**
- * Cursor animation on page
- *
- * @author DCRichards
- **/
-
 (function($) {
     
     var animateCursor = function() {
@@ -14,8 +8,39 @@
         }, 'fast', 'swing');    
     };
     
-    $(document).ready(function() {
+    $(document).ready(function(){
+        
+        // blinking cursor animation
         setInterval(animateCursor, 1200);
+        
+        // smooth scrolling
+        $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                    return false;
+                    }
+                }
+            });
+        });
+        
+        // parallax scrolling
+        $window = $(window);
+ 
+        $('section[data-type="background"]').each(function(){
+            var $scroll = $(this);
+
+            $(window).scroll(function() {                       
+                var yPos = -($window.scrollTop() / $scroll.data('speed')); 
+                var coords = '50% '+ yPos + 'px';
+                $scroll.css({ backgroundPosition: coords });    
+            }); 
+       }); 
     });
     
 }(jQuery));
