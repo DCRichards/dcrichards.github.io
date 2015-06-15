@@ -135,8 +135,31 @@ h1.name {
     width: 100%; 
     position: relative; 
     box-shadow: 0 0 50px rgba(0,0,0,0.8);
-    padding: 100px 0;
 }
+
+#about .container h1 {
+    font-size: 3em;
+}
+
+#about .profile {
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+
+#about .profile i.nav-icon {
+    color: #333;
+}
+
+#about a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+#about a:hover {
+    color: #FFF;
+    text-decoration: underline;
+}
+
 #contact {
     background: url(../resc/contact.jpg) 100% 0 fixed;
     min-height: 580px;
