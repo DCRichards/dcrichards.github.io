@@ -1,4 +1,4 @@
-# dcrichards.me
+# dcrichards.com
 
 An excuse to give some things a try, mainly:
 
