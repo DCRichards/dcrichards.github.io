@@ -8,7 +8,17 @@
         }, 'fast', 'swing');    
     };
     
+    var setToViewportSize = function() {
+        var height = $(window).height();
+        $("#intro").css('min-height', height);
+        $("#about").css('min-height', height);
+        $("#contact").css('min-height', height);
+    };
+    
     $(document).ready(function(){
+        
+        //set height dynamically
+        setToViewportSize();
         
         // blinking cursor animation
         setInterval(animateCursor, 1200);
