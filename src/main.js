@@ -17,6 +17,14 @@
     
     $(document).ready(function(){
         
+        //easter egg
+        console.log('--------------------------------');
+        console.log('    ...Caught you looking didn\'t I? ;)');
+        console.log(' That\'s okay, I like your style!');
+        console.log(' How about heading over to my contact page');
+        console.log(' and getting in touch?');
+        console.log('---------------------------------');
+        
         //set height dynamically
         setToViewportSize();
         
