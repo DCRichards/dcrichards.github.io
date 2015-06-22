@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>David Richards</title>
-    <link>http://dcrichards.com/blog/</link>
+    <link>http://localhost:1313/blog/</link>
     <description>Recent content on David Richards</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 20 Jun 2015 14:37:15 +0100</lastBuildDate>
-    <atom:link href="http://dcrichards.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Prelude</title>
-      <link>http://dcrichards.com/blog/post/intro/</link>
+      <link>http://localhost:1313/blog/post/intro/</link>
       <pubDate>Sat, 20 Jun 2015 14:37:15 +0100</pubDate>
       
-      <guid>http://dcrichards.com/blog/post/intro/</guid>
+      <guid>http://localhost:1313/blog/post/intro/</guid>
       <description>
 
 &lt;h1 id=&#34;testing-one-two:34c4da6d4768d05e50db99357a299b5c&#34;&gt;Testing, one, two.&lt;/h1&gt;
