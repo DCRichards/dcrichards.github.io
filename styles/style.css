@@ -131,7 +131,6 @@ h1.name {
 
 #about { 
     background: url(../resc/about.jpg) 100% 0 fixed; 
-/*    min-height: 670px;*/
     height: auto;
     margin: 0 auto; 
     width: 100%; 
@@ -164,7 +163,6 @@ h1.name {
 
 #contact {
     background: url(../resc/contact.jpg) 100% 0 fixed;
-/*    min-height: 670px;*/
     height: auto;
     margin: 0 auto; 
     width: 100%; 
