@@ -1,9 +1,11 @@
 # dcrichards.com
 
-An excuse to give some things a try, mainly:
+Source and hosting for [dcrichards.com](http://dcrichards.com).
 
-* GitHub Pages
-* [Ghost Blog Platform](https://ghost.org/)
-* [buster static site generator](https://github.com/axitkhurana/buster/)
+### Bugs & Issues
 
-Suggestions and new ways to do this welcome!
+Raise an issue through the usual channel and I'm all over it!
+
+### Recruitment
+
+Stumbled upon here looking for your next hire? Get in touch! See the site for contact details.
