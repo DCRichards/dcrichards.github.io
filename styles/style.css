@@ -143,13 +143,13 @@ h1.name {
 
 #about .profile-summary {
     font-size: 0.9em;
-    margin-top: 20px;
+    margin-top: 10px;
     max-width: 40%;
     float: left;
 }
 
 #about .profile-detail {
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 0.9em;
     max-width: 40%;
     float: right;
