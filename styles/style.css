@@ -121,7 +121,6 @@ h1.name {
 }
 
 #intro {
-/*    min-height: 670px;*/
     margin: 0 auto;
     height: auto;
     width: 100%; 
@@ -142,13 +141,24 @@ h1.name {
     font-size: 3em;
 }
 
-#about .profile {
+#about .profile-summary {
+    margin-left: 40px;
     font-size: 0.9em;
     margin-top: 20px;
+    max-width: 40%;
+    float: left;
 }
 
-#about .profile i.nav-icon {
-    color: #333;
+#about .profile-detail {
+    margin-right: 40px;
+    margin-top: 20px;
+    font-size: 0.9em;
+    max-width: 40%;
+    float: right;
+}
+
+#about i.nav-icon {
+    color: #444;
 }
 
 #about a {
