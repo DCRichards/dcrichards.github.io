@@ -10,12 +10,22 @@
     
     var setToViewportSize = function() {
         var height = $(window).height();
+        var width = $(window).width();
         $("#intro").css('min-height', height);
         $("#about").css('min-height', height);
         $("#contact").css('min-height', height);
+        if (width < 400) {
+            $("#about.profile-detail").css('float', '');
+        } else {
+            $("#about.profile-detail").css('float', 'right');
+        }
     };
     
-    $(document).ready(function(){
+    $(window).resize(function() {
+        setToViewportSize();
+    });
+    
+    $(document).ready(function() {
         
         //easter egg
         console.log('-------------------------------------------');
