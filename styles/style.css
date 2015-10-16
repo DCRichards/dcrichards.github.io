@@ -142,7 +142,6 @@ h1.name {
 }
 
 #about .profile-summary {
-    margin-left: 40px;
     font-size: 0.9em;
     margin-top: 20px;
     max-width: 40%;
@@ -150,7 +149,6 @@ h1.name {
 }
 
 #about .profile-detail {
-    margin-right: 40px;
     margin-top: 20px;
     font-size: 0.9em;
     max-width: 40%;
