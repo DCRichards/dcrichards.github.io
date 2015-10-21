@@ -137,10 +137,16 @@ h1.name {
     box-shadow: 0 0 50px rgba(0,0,0,0.8);
 }
 
-#about .container h1 {
+#about .row h1 {
     font-size: 3em;
 }
 
+#about .col-md-6 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/*
 #about .profile-summary {
     font-size: 0.9em;
     margin-top: 10px;
@@ -154,6 +160,7 @@ h1.name {
     max-width: 40%;
     float: right;
 }
+*/
 
 #about i.nav-icon {
     color: #444;
