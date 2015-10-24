@@ -146,22 +146,6 @@ h1.name {
     padding-right: 30px;
 }
 
-/*
-#about .profile-summary {
-    font-size: 0.9em;
-    margin-top: 10px;
-    max-width: 40%;
-    float: left;
-}
-
-#about .profile-detail {
-    margin-top: 10px;
-    font-size: 0.9em;
-    max-width: 40%;
-    float: right;
-}
-*/
-
 #about i.nav-icon {
     color: #444;
 }
@@ -200,7 +184,7 @@ h1.name {
 
 .media-links {
     margin-top: 150px;
-    font-size: 1.3em;
+    font-size: 2em;
 }
 .media-links i.nav-icon.fa {
     color: #333;
@@ -214,9 +198,13 @@ h1.name {
     color: #FFF;
 }
 
+.media-links a:hover {
+    text-decoration: none;
+}
+
 .footer {
     margin-top: 70px;
-    font-size: 0.7em;
+    font-size: 0.9em;
 }
 
 .footer a {
