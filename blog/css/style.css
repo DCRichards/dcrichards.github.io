@@ -1,0 +1,147 @@
+html {
+    font-family: 'Lato', sans-serif;
+}
+
+@media (min-width: 48em) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 58em) {
+    html {
+        font-size: 20px;
+    }
+}
+
+/* CODE HIGHLIGHT */
+
+code, pre {
+    font-family: Menlo, Monaco, "Courier New", monospace;
+}
+
+code {
+    padding: 1px 3px;
+    font-size: 85%;
+    color: #555;
+    background-color: #e8e8e8;
+    border-radius: 3px;
+}
+
+pre {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    font-size: .8rem;
+    line-height: 1.4;
+    white-space: pre;
+    white-space: pre-wrap;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f9f9f9;
+}
+
+pre code {
+    padding: 0;
+    font-size: 100%;
+    color: inherit;
+    background-color: transparent;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: #333;
+    text-transform: uppercase;
+    border: none;
+    background: #d8d8d8;
+}
+
+@media (min-width: 48em) {
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 12rem;
+        text-align: left;
+        border-right: solid #444 0.3rem;
+    }
+}
+
+.sidebar a {
+    color: #333;
+}
+
+.sidebar-about h1 {
+    color: #333;
+    margin-top: 0;
+    font-size: 3.25rem;
+}
+
+.sidebar-about a {
+    text-decoration: none;
+}
+
+@media (min-width: 48em) {
+    .sidebar-footer {   
+        position: fixed;
+        bottom: 0;
+        font-size: 0.8rem;
+        margin-bottom: 2rem;
+        text-align: left;
+    }
+}
+
+.sidebar-footer {
+    font-size: 0.8rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* MAIN CONTENT */
+
+.post {
+    margin-bottom: 4rem;
+}
+
+.post h1 {
+    font-size: 2.5rem;
+}
+
+.post a {
+    color: #000;
+    text-decoration: none;
+}
+
+.post-date {
+    color: #777;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.content {
+    padding-top: 0.8rem;
+    padding-bottom: 4rem; 
+    font-family: 'Work Sans', sans-serif;
+    word-spacing: -0.5px;
+    letter-spacing: -0.5px;
+}
+
+@media (min-width: 48em) {
+    .content {
+        max-width: 38rem;
+        margin-left: 20rem;
+        margin-right: 2rem;
+    }
+}
+
+@media (min-width: 64em) {
+    .content {
+        margin-left: 22rem;
+        margin-right: 4rem;
+    }
+}
