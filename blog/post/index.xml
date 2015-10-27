@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Blog</title>
+    <title>Posts on /etc/davi.d</title>
     <link>http://dcrichards.com/blog/post/</link>
-    <description>Recent content in Posts on Blog</description>
+    <description>Recent content in Posts on /etc/davi.d</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 25 Oct 2015 20:16:54 +0000</lastBuildDate>

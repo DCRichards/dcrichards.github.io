@@ -67,7 +67,7 @@ pre code {
         left: 0;
         bottom: 0;
         width: 12rem;
-        text-align: left;
+        text-align: center;
         border-right: solid #444 0.3rem;
     }
 }
@@ -77,9 +77,34 @@ pre code {
 }
 
 .sidebar-about h1 {
+    text-transform: none;
     color: #333;
     margin-top: 0;
-    font-size: 3.25rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0;
+    font-size: 2.5rem;
+}
+
+.sidebar-about .image-wrapper {
+    width: 100%;
+}
+
+.sidebar-about .image-container {
+    width: 30%;
+    margin: auto;
+}
+
+@media (min-width: 48em) {
+    .sidebar-about .image-container {
+        width: 70%;
+        margin: auto;
+    }
+}
+
+.sidebar-about img {
+    display: block;
+    margin: auto;
+    width: 70%;
 }
 
 .sidebar-about a {
@@ -88,11 +113,9 @@ pre code {
 
 @media (min-width: 48em) {
     .sidebar-footer {   
-        position: fixed;
-        bottom: 0;
         font-size: 0.8rem;
         margin-bottom: 2rem;
-        text-align: left;
+        text-align: center;
     }
 }
 
