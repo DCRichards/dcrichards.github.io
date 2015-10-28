@@ -107,10 +107,11 @@ h1.name {
 }
 
 .intro-info  {
+    font-size: 1.1em;
     color: #000;
 }
 
-.intro-info sup {
+.intro-info p {
     color: #000;
 }
 
@@ -129,16 +130,32 @@ h1.name {
 }
 
 #about { 
-    background: url(../resc/about.jpg) 100% 0 fixed; 
+/*    background: url(../resc/about.jpg) 100% 0 fixed; */
+    background: #96a9b5;
     height: auto;
     margin: 0 auto; 
     width: 100%; 
-    position: relative; 
-    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    position: relative;
+    box-shadow: 0 0 70px rgba(30,30,30,0.8);
+    font-size: 1em;
+}
+
+#about .profile-text {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    width: 70%;
+    font-size: 1.1em;
+}
+
+#about .profile-text a {
+    text-decoration: underline;
 }
 
 #about .row h1 {
-    font-size: 3em;
+    font-size: 3.5em;
+    font-weight: bold;
 }
 
 #about .col-md-6 {
@@ -161,33 +178,49 @@ h1.name {
 }
 
 #contact {
-    background: url(../resc/contact.jpg) 100% 0 fixed;
+    background: #FFF;
     height: auto;
     margin: 0 auto; 
     width: 100%; 
     position: relative; 
-    box-shadow: 0 0 50px rgba(0,0,0,0.8);
-    color: #fff;
+    box-shadow: 0 0 70px rgba(30,30,30,0.8);
 }
 
 #contact .container {
     height: 100%;
-    width: 80%;
+    width: 50%;
     font-size: 1em;
+    color: #444;
+}
+
+.contact-me a:hover {
+    text-decoration: none;
 }
 
 #contact .container h1 {
-    font-family: 'Vollkorn', serif;
-    font-style: italic;
-    font-size: 3em;
+    font-weight: 900;
+    font-size: 4em;
+}
+
+#contact .container h1 i {
+    color: #444;
+}
+
+#contact .container h4 {
+    color: #999;
+}
+
+#contact .container h4 a, a:hover {
+    color: #777;
+    text-decoration: underline;
 }
 
 .media-links {
-    margin-top: 150px;
+    margin-top: 50px;
     font-size: 2em;
 }
 .media-links i.nav-icon.fa {
-    color: #333;
+    color: #FFF;
 }
 
 .media-links a {
@@ -195,7 +228,7 @@ h1.name {
 }
 
 .media-links i.fa {
-    color: #FFF;
+    color: #444;
 }
 
 .media-links a:hover {
@@ -203,15 +236,21 @@ h1.name {
 }
 
 .footer {
-    margin-top: 70px;
-    font-size: 0.9em;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    position: absolute;
+    bottom: 0;
+    font-size: 1em;
+    color: #000;
 }
 
 .footer a {
-    color: #FFF;
+    color: #000;
     text-decoration: underline;
 }
 
 .footer a:hover {
-    color: #FFF;
+    color: #000;
 }
