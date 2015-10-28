@@ -215,8 +215,16 @@ h1.name {
     text-decoration: underline;
 }
 
+
+@media (max-width: 48px) {
+    .media-links {
+        font-size: 1.3em;
+    }
+}
+
 .media-links {
     margin-top: 50px;
+    margin-bottom: 20px;
     font-size: 2em;
 }
 .media-links i.nav-icon.fa {
