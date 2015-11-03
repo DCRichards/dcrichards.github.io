@@ -129,9 +129,8 @@ h1.name {
     padding: 0 0;
 }
 
-#about { 
-/*    background: url(../resc/about.jpg) 100% 0 fixed; */
-    background: #96a9b5;
+#about {
+    background: #45566a;
     height: auto;
     margin: 0 auto; 
     width: 100%; 
@@ -140,41 +139,69 @@ h1.name {
     font-size: 1em;
 }
 
-#about .profile-text {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-    margin-top: 20px;
-    width: 70%;
-    font-size: 1.1em;
+#about h1 {
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
-#about .profile-text a {
-    text-decoration: underline;
+#about .row {
+    margin: auto;
+    width: 96%;
 }
 
-#about .row h1 {
-    font-size: 3.5em;
-    font-weight: bold;
+#about b {
+    color: #555;
 }
 
-#about .col-md-6 {
-    padding-left: 30px;
-    padding-right: 30px;
+#about .skills {
+    color: #555;
+    min-height: 40px;
 }
 
-#about i.nav-icon {
-    color: #444;
+#about .stacks h2 {
+    margin-top: 5px
+}
+
+#about .stacks {
+    padding: 10px;
+    color: #555;
+    background: #FFF;
+    min-height: 260px;
+    font-size: 1em;
+    border: solid 6px #45566a;
+}
+
+#about .elaborated {
+    color: #555;
+    text-align: justify;
+    font-size: 0.95em;
+    margin-top: 10px;
 }
 
 #about a {
-    color: #FFF;
-    text-decoration: none;
+    color: #555;
+    text-decoration: underline;
 }
 
-#about a:hover {
-    color: #FFF;
-    text-decoration: underline;
+#about i.fa {
+    color: #444;
+}
+
+#about .info h2 {
+    font-size: 24px;
+}
+
+#about .info {
+    color: #444 ;
+    background: #FFF;
+    min-height: 250px;
+    border: solid 6px #45566a;
+    margin-top: 3px;
+    margin-bottom: 15px;
+}
+
+#about .news {
+    background: rgb(212, 212, 212);
 }
 
 #contact {
