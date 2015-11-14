@@ -23,12 +23,12 @@ code, pre {
 code {
     padding: 1px 3px;
     font-size: 85%;
-    color: #555;
     background-color: #e8e8e8;
     border-radius: 3px;
 }
 
 pre {
+    overflow: scroll;
     display: block;
     margin-top: 0;
     margin-bottom: 1rem;
@@ -36,10 +36,8 @@ pre {
     font-size: .8rem;
     line-height: 1.4;
     white-space: pre;
-    white-space: pre-wrap;
     word-break: break-all;
-    word-wrap: break-word;
-    background-color: #f9f9f9;
+    background-color: #e8e8e8;
 }
 
 pre code {
@@ -47,6 +45,15 @@ pre code {
     font-size: 100%;
     color: inherit;
     background-color: transparent;
+}
+
+blockquote {
+    padding-left: 10px;
+    border-left: 2px solid #777;
+}
+
+blockquote p {
+   
 }
 
 /* SIDEBAR */
@@ -131,13 +138,21 @@ pre code {
     margin-bottom: 4rem;
 }
 
+.post img {
+    width: 60%;
+}
+
 .post h1 {
     font-size: 2.5rem;
 }
 
-.post a {
-    color: #000;
+.post h1 a {
     text-decoration: none;
+}
+
+.post a {
+    color: #333;
+    text-decoration: underline;
 }
 
 .post-date {
