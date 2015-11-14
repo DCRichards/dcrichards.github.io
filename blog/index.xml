@@ -6,7 +6,32 @@
     <description>Recent content on /etc/davi.d</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sat, 14 Nov 2015 12:59:38 +0000</lastBuildDate>
     <atom:link href="http://dcrichards.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>#porteouverte: Crowdsourcing &amp; Digital Humanitarianism</title>
+      <link>http://dcrichards.com/blog/post/porteouverte/</link>
+      <pubDate>Sat, 14 Nov 2015 12:59:38 +0000</pubDate>
+      
+      <guid>http://dcrichards.com/blog/post/porteouverte/</guid>
+      <description>&lt;p&gt;November 14th 2015, the morning following the tragic events in Paris. This morning, images of anger, distress, relief in finding loved ones safe and messages of solidarity and resiliance appear on websites across the world and news anchors grow weary as they continue to report through the day and night on the events and their aftermarth. But for many people, their television sets simply provided a background buzz as they searched frantically or curiously through livestreams, online comment sections and social media.&lt;/p&gt;
+
+&lt;p&gt;As the events at Le Bataclan and across the city unfolded, the domain name &lt;a href=&#34;http://porteouverte.eu/&#34;&gt;porteouverte.eu&lt;/a&gt; was being registered. This would host a hastily assembled website used to allow those with &lt;em&gt;portes ouvertes&lt;/em&gt; (&lt;em&gt;open doors&lt;/em&gt;) to provide contact details and locations for those affected to shelter, likely inspired by the &lt;a href=&#34;https://twitter.com/hashtag/porteouverte&#34;&gt;#porteouverte&lt;/a&gt; hashtag being used across Twitter for the same reason. The website is the work of Dutch web developer Janyk Steenbeek and Pascal Schwientek and is not the first time that crowdsourced news and information has been used in the midst of a crisis.&lt;/p&gt;
+
+&lt;p&gt;On April 25th, Nepal was struck by a 7.8-magnitude earthquake, leaving 5000 dead. While workers on the ground worked relentlessly on the rescue mission, thousands took to the &lt;a href=&#34;http://www.openstreetmap.org/&#34;&gt;Open Street Map&lt;/a&gt; (OSM) platform. In just &lt;a href=&#34;http://www.wired.co.uk/news/archive/2015-04/28/mapping-nepal-after-the-earthquake&#34;&gt;48 hours&lt;/a&gt; the Nepal earthquake was mapped and the data used to provide crucial location data to rescue workers. Much like Wikipedia, anyone can contribute to OSM and use local knowledge to provided geographic information to the project. During this time, Facebook also saw the first major usage of its &lt;a href=&#34;http://newsroom.fb.com/news/2014/10/introducing-safety-check/&#34;&gt;Safety Check&lt;/a&gt; feature, which allows users mark themselves as safe from situations in their area which yet again provided another valuable channel of communication.&lt;/p&gt;
+
+&lt;p&gt;Four years prior, Haiti was also devastated by an earthquake. Like Nepal, crisis mapping played a key part in aiding the rescue and recovery efforts and saw crowdsource platform &lt;a href=&#34;https://www.ushahidi.com/blog/2012/01/12/haiti-and-the-power-of-crowdsourcing/&#34;&gt;Ushahidi&lt;/a&gt; (the Swahili for &lt;em&gt;testimony&lt;/em&gt;) make use of OSM to map the disaster areas. Along side this, came an even simpler effort, a toll-free SMS number that could be used for urgent communications. Many of these SMS messages were written in Haitian Creole and so a web-based platform to allow native speakers to translate and respond to messages was &lt;a href=&#34;http://voices.nationalgeographic.com/2012/07/02/crisis-mapping-haiti/&#34;&gt;put together overnight&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;It is easy to be sceptical of this digital humanitarianism and many argue that it is ridiculous to suggest that crisis victims are logging on to social media or locating themselves on a map. However, the growth and expansion of mobile technology can be felt well outside of Europe, America and East Asia. In Nigeria, &lt;a href=&#34;http://www.technologybanker.com/technology-voice-from-africa/nigerias-mobile-money-landscape-and-challenges-ahead#.Vkdyqd_hAWo&#34;&gt;mobile payments&lt;/a&gt; are becoming increasingly popular and there is growing interest in developing this from the country itself and outside. Indonesia too continues to be a &lt;a href=&#34;https://www.telegeography.com/products/commsupdate/articles/2015/03/24/indonesia-to-drive-telecoms-infrastructure-modernisation-programme/&#34;&gt;driving force&lt;/a&gt; in the modernisation of telecoms infrastructure with nationwide coverage of 4G and fibre optic networks a primary goal for the nation&amp;rsquo;s digitalisation.&lt;/p&gt;
+
+&lt;p&gt;Of course, with the rise of big data comes the age of big data collection and the Snowden revelations and reports of mass surveilance programmes have left a sour taste in the mouth of many of those with technology in their hands. However, it is these too which have come about in part by the volunteering of information to sites such as Assange&amp;rsquo;s &lt;a href=&#34;https://wikileaks.org/index.en.html&#34;&gt;WikiLeaks&lt;/a&gt; and while controversial, shows the power that access to raw information can bring.&lt;/p&gt;
+
+&lt;p&gt;Back in Paris today, no piece of software or digital humanitarianism will heal the wounds of a shaken nation but it is becoming increasingly apparent that information is more powerful than any weapon. The most dangerous enemy is armed not with weapons, but with &lt;strong&gt;misinformation&lt;/strong&gt;. It is deeply saddening that with these messages of solidarity today comes a torrent of hatred and racism towards Muslims across the world. For many however, these are the only stories that they hear. The stories of hope and compassion and the struggles of those in other parts of the world who too face violence and opression in their homes and cafes are unable to find light through the bold headlines and subtle biases of organisations.&lt;/p&gt;
+
+&lt;p&gt;Keystrokes and hashtags alone won&amp;rsquo;t disarm a soldier or save a city from disaster, but never understimate their power.&lt;/p&gt;
+</description>
+    </item>
     
   </channel>
 </rss>
