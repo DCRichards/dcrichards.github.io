@@ -1,0 +1,18 @@
+* {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    color: #444;
+}
+
+body {
+    background: #FFF;
+}
+
+.content h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.content h2 {
+    text-transform: uppercase;
+}
