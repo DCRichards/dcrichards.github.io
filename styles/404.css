@@ -9,10 +9,63 @@ body {
 }
 
 .content h1 {
-    font-size: 40px;
-    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
 }
 
 .content h2 {
-    text-transform: uppercase;
+    font-size: 60px;
+    font-style: italic;
+    font-family: 'Old Standard TT', serif;
+}
+
+.content .status {
+    font-weight: bold;
+    font-size: 130px;
+    color: #BBB;
+}
+
+.content .status i {
+    color: #BBB;
+    margin: -10px;
+}
+
+.content .status-msg {
+    font-weight: bold;
+    margin-top: -20px;
+    font-size: 45px;
+    color: #BBB;
+}
+
+.status-wrapper {
+    margin-top: 30px;
+    background: #ededed;
+    padding-bottom: 10px;
+}
+
+.gohome {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: -1px;
+    font-size: 40px;
+}
+
+.gohome img {
+    width: 110px;
+}
+
+.gohome .stage1 {
+    font-weight: 100;
+}
+
+.gohome .stage2 {
+    font-weight: 300;
+}
+
+.gohome .stage3 {
+    font-weight: 400;
+}
+
+.gohome .stage4 {
+    font-weight: 700;
 }
