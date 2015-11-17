@@ -69,14 +69,3 @@ body {
 .gohome .stage4 {
     font-weight: 700;
 }
-
-.footer {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 15px;
-    position: fixed;
-    bottom: 0;
-    font-size: 0.9em;
-    color: #444;
-}
