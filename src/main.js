@@ -14,6 +14,7 @@
         $("#intro").css('min-height', height);
         $("#about").css('min-height', height);
         $("#contact").css('min-height', height);
+        $("#fourohfour").css('min-height', height);
         if (width < 400) {
             $("#about.profile-detail").css('float', '');
         } else {
