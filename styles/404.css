@@ -75,7 +75,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 15px;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     font-size: 0.9em;
     color: #444;
