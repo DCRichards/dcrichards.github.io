@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #2f2f2f !important;
+    background-color: #2c2c2c !important;
 }
 
 /* header */
@@ -21,12 +21,13 @@ h1.name {
     max-width: 100%;
     min-height: 300px;
     margin: 0 auto;
+    border: none;
 }
 
 .panel.info-panel.panel-default .panel-heading {
     border: none;
     background-image: none;
-    background-color: #d1d1d1;
+    background-color: #6f757c;
 }
 
 .panel.info-panel h3.panel-title {
@@ -40,11 +41,11 @@ h1.name {
 }
 
 .panel.info-panel h3.panel-title .fa.close-button {
-    color: #ff6464;
+    color: #f71034;
 }
 
 .panel.info-panel h3.panel-title .fa {
-    color: #434343;
+    color: #383838;
 }
 
 .panel.info-panel.panel-default .panel-body {
@@ -58,7 +59,7 @@ h1.name {
     font-size: 2em;
     font-family: "Andale Mono", AndaleMono, monospace;
     font-style: italic;
-    color: #3b3b3b;
+    color: #141414;
 }
 
 .panel.info-panel.panel-default .panel-body .row {
@@ -79,9 +80,9 @@ h1.name {
 
 .panel .btn-default {
     text-shadow: none;
-    background: #008daf;
-    border: 3px solid #008daf;
-    color: #fff;
+    background: #038cad;
+    border: 3px solid #038cad;
+    color: #ffffff;
     -webkit-box-shadow: none;
 }
 
@@ -136,12 +137,12 @@ h1.name {
     width: 100%; 
     position: relative;
     box-shadow: 0 0 70px rgba(30,30,30,0.8);
-    font-size: 1em;
+    font-size: 1.3em;
 }
 
-#about h1 {
-    padding-top: 15px;
-    padding-bottom: 15px;
+#about, #projects h1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #about .row {
@@ -155,18 +156,20 @@ h1.name {
 
 #about .skills {
     color: #555;
-    min-height: 40px;
+    min-height: 100px;
 }
 
 #about .stacks h2 {
-    margin-top: 5px
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 15px;
 }
 
 #about .stacks {
-    padding: 10px;
+    padding: 20px;
     color: #555;
     background: #FFF;
-    min-height: 260px;
+    min-height: 500px;
     font-size: 1em;
     border: solid 6px #45566a;
 }
@@ -175,7 +178,7 @@ h1.name {
     color: #555;
     text-align: justify;
     font-size: 0.95em;
-    margin-top: 10px;
+    margin-top: 40px;
     margin-bottom: 5px;
 }
 
@@ -200,6 +203,73 @@ h1.name {
     margin-top: 3px;
     margin-bottom: 15px;
 }
+
+#projects {
+    background: #4c8e7f;
+    height: auto;
+    margin: 0 auto; 
+    width: 100%; 
+    position: relative;
+    box-shadow: 0 0 70px rgba(30,30,30,0.8);
+    font-size: 1.3em;
+}
+
+#projects h1 {
+    color: #fff;
+}
+
+#projects .container {
+    height: 100%;
+    width: 100%;
+    font-size: 1em;
+    color: #444;
+    padding-bottom: 10px;
+}
+
+#projects .row {
+    margin: auto;
+    width: 100%;
+}
+
+#projects .projects {
+    background: #fff;
+    padding: 5px;
+    min-height: 500px;
+    border: 5px solid #4c8e7f;
+}
+
+#projects .elaborated {
+    padding: 3px;
+    color: #555;
+}
+
+#projects .projects .image {
+    min-height: 150px;
+}
+
+#projects .projects .twoticks img {
+    width: 25%;
+}
+
+#projects .projects .vizit img {
+    width: 45%;
+}
+
+#projects .projects .santa img {
+    width: 60%;
+}
+
+#projects .projects h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 15px;
+    color: #555;
+}
+
+#projects a:hover {
+    text-decoration: none;
+}
+
 
 #contact {
     background: #FFF;

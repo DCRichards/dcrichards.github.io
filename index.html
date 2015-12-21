@@ -48,9 +48,11 @@
                     <div class="row">
                         <div class="bio col-md-12">
                             <div class="intro-info">
-                                <div class="highlighted">Hi, I'm David, a software developer based in Brighton, UK.</div>
+                                <div class="highlighted">Hi, I'm David, a developer currently based in Brighton, UK.</div>
                                 <br />
-                                I graduated with a First Class in Computer Science from the University of Sussex and have experience in developing for web, mobile and wearable technologies.
+                                I graduated with a First Class in Computer Science from Sussex.
+                                <br />
+                                Since then, I've spent my time developing web, mobile and wearable applications.
                                 <br />
                                 <br />
                                 Okay great, let me...
@@ -77,12 +79,12 @@
             
             <!-- Section 2 -->
             <section id="about" data-speed="4" data-type="background">
-                <h1>FULL-STACK DEVELOPER</h1>
+                <h1>FULL-STACK DEVELOPMENT</h1>
                 <div class="row">
                     <div class="col-md-3 stacks">
                         <h2><i class="fa fa-mobile"></i> MOBILE</h2>
                         <div class="skills">
-                        ANDROID &middot; APACHE CORDOVA
+                        ANDROID &middot; iOS &middot; APACHE CORDOVA
                         </div>
                         <div class="elaborated">
                             I have experience in developing cross-platform mobile applications in Apache <a href="https://cordova.apache.org/">Cordova</a>, including developing native plugins. I also have experience developing natively for Android. Right now, I'm also learning <b>Objective-C</b> and getting stuck into some iOS development.
@@ -102,10 +104,10 @@
                     <div class="col-md-3 stacks">
                         <h2><i class="fa fa-hand-paper-o"></i> WEARABLE</h2>
                         <div class="skills">
-                            PEBBLE &middot; ANDROID WEAR
+                            PEBBLE &middot; ANDROID WEAR &middot; APPLE WATCH
                         </div>
                         <div class="elaborated">
-                            The majority of my recent work has focussed on developing for wearable technologies. I have strong experience with the <a href="http://developer.getpebble.com/docs/c/">Pebble C SDK</a>. If you're a pebble owner or developer then check out my <a href="https://github.com/DCRichards/twoTicksTwice">watchface project</a>. More recently I began developing with Android Wear devices and the Wear SDK.
+                            The majority of my recent work has focussed on developing for wearable technologies. I have strong experience with the <a href="http://developer.getpebble.com/docs/c/">Pebble C SDK</a>. If you're a pebble owner or developer then check out my <a href="https://github.com/DCRichards/twoTicksTwice">watchface project</a>. More recently I started working with the Apple Watch and the new Watch OS 2.
                         </div>
                     </div>
                     <div class="col-md-3 stacks">
@@ -121,26 +123,58 @@
                     </div>
                 
                 </div>
-                <div class="row">
-                    <div class="col-md-6 info">
-                        <h2><i class="fa fa-github-square"></i> CURRENT PROJECT</h2>
-                        <h4>VizIt: Dependency Visualisation in Python</h4>
-                        <div class="elaborated">
-                            Trauling through a jungle of <code>#import "ViewController.h"</code> type statements in an Objective-C project recently, I found myself looking for a way to make better sense of the multitude of dependencies. In an effort to realise this and dig out a neglected Python manual I've begun work on a simple parser and graph generator which builds a network graph of dependencies. It's still very much a work in progress but the latest work can be found <a href="https://github.com/DCRichards/vizit">here</a>. 
-                        </div>
-                    </div>    
-                </div>
+                
                 
             </section>
             
-            <!-- Section 3 -->
+            <!-- section 3 -->
+            <section id="projects" data-speed="4" data-type="background">
+                <div class="container">
+                    <h1>CURRENT PROJECTS</h1>
+                    
+                    <div class="row">
+                        
+                    <div class="col-lg-4 projects">
+                        <a href="https://github.com/DCRichards/santaSelector"><h2>Santa Selector</h2></a>
+                        <div class="image santa">
+                            <img src="resc/santa.png"/>
+                        </div>
+                        <div class="elaborated">
+                           A work in progress Secret Santa picker written as a Python web application in Flask. Designed to eliminate the politics of secret santa selection, the matching algorithm is a simplified maximal graph matching, randomly selecting from potential Santas until a suitable giftee is found and repeating until everyone is assigned a Santa and recipent.
+                        </div>
+                    </div>
+                        
+                    <div class="col-md-4 projects">
+                        <a href="https://github.com/DCRichards/vizit"><h2>VizIt</h2></a>
+                        <div class="image vizit">
+                            <img src="resc/vizit.png"/>
+                        </div>
+                        <div class="elaborated">
+                            Whilst refactoring a large Objective-C project I found myself yearning for a more visual way to represent class dependencies. Enter Vizit. Written in Python and using a simple regex to gather dependencies and display them in either pyplot or in HTML using the excellent d3.js library. The todo list here includes more detailed statistics and more intelligent language support.
+                        </div>
+                    </div>
+                        
+                    <div class="col-md-4 projects">
+                        <a href="https://github.com/DCRichards/twoTicksTwice"><h2>Two Ticks Twice</h2></a>
+                        <div class="image twoticks">
+                            <img src="resc/twotickstwice.png"/>
+                        </div>
+                        <div class="elaborated">
+                            With the burden of keeping my smartwatch charged and connected apparently too great not to be solved computationally, I wrote a simple watchface for the Pebble to make sure battery level and bluetooth connectivty are just a glance away. The watchface is written using the excellently documented C SDK and can be found on the Pebble appstore.
+                        </div>
+                    </div> 
+                </div>
+                    
+                </div>
+            </section>
+            
+            <!-- Section 4 -->
             <section id="contact" data-speed="2" data-type="background">
                 <div class="container">
-                    <h1>Oh, <i>hello...</i></h1>
+                    <h1>Oh, <i>hello there...</i></h1>
                     <br />
-                    <h3>I'd love to hear from you if you think I'd be a great fit for your organisation or project or if you'd just like to know more about what I do.</h3>
+                    <h3>Think I might be a good fit for your team? Let's talk!</h3>
                     <br />
-<!--                    <h4>Pssst! Did you know I also have a <a href="/blog/">blog.</a></h4>-->
                     <div class="media-links">
                     <a href="http://uk.linkedin.com/in/dcrichards24">
                         <span class="fa-stack fa-lg">
