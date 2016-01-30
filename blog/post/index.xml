@@ -6,8 +6,140 @@
     <description>Recent content in Posts on /etc/davi.d</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Nov 2015 12:59:38 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2015 12:23:55 +0000</lastBuildDate>
     <atom:link href="http://dcrichards.com/blog/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Apple Watch: Complications</title>
+      <link>http://dcrichards.com/blog/post/complications/</link>
+      <pubDate>Tue, 17 Nov 2015 12:23:55 +0000</pubDate>
+      
+      <guid>http://dcrichards.com/blog/post/complications/</guid>
+      <description>
+
+&lt;p&gt;Recently, I&amp;rsquo;ve been getting stuck into some Apple Watch development. Whilst WatchOS 2 provides some useful APIs and functionality, there is a distinct lack of good documentation that isn&amp;rsquo;t buried deep in the badly presented WWDC videos. For this reason, I&amp;rsquo;ve decided to add my two cents and present my learnings so far in something more fluent, coherent and useful than Apple&amp;rsquo;s lacklustre efforts.&lt;/p&gt;
+
+&lt;p&gt;I should note that the following is written with Objective-C rather than the more modern and syntactically paletable Swift but those familiar with both shouldn&amp;rsquo;t struggle to make the conversion. For reference, the official documentation can be found in the &lt;a href=&#34;https://developer.apple.com/library/watchos/documentation/General/Conceptual/AppleWatch2TransitionGuide/CreatingaComplication.html&#34;&gt;WatchOS 2 Transition Guide&lt;/a&gt; as well as in the relevant &lt;a href=&#34;https://developer.apple.com/library/watchos/documentation/WatchKit/Reference/WatchKit_framework/index.html&#34;&gt;WatchKit Framework documentation&lt;/a&gt; which contains examples in both languages.&lt;/p&gt;
+
+&lt;h3 id=&#34;some-context:1528dbce263a8191b2123ab27d4b3625&#34;&gt;Some Context&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;TL;DR: A complication is a watchface widget which can be updated and used to access watch app information and display it to the user.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The above is most of what you need to know about complications from a user perspective. Delving deeper, there a number of complication families which are different shapes and sizes and can be displayed in various positions on a watchface. This useful diagram, taken from the &lt;a href=&#34;https://developer.apple.com/library/watchos/documentation/General/Conceptual/AppleWatch2TransitionGuide/DesigningaComplication.html&#34;&gt;WatchOS 2 documentation&lt;/a&gt; outlines these families.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://developer.apple.com/library/watchos/documentation/General/Conceptual/AppleWatch2TransitionGuide/Art/complication_styles_2x.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;complication-controller:1528dbce263a8191b2123ab27d4b3625&#34;&gt;Complication Controller&lt;/h3&gt;
+
+&lt;p&gt;If you selected the &lt;em&gt;Include Complication&lt;/em&gt; checkbox when creating your watch app in XCode then the files &lt;strong&gt;ComplicationController.h&lt;/strong&gt; and &lt;strong&gt;ComplicationController.m&lt;/strong&gt; will have been created for you in your WatchKit Extension. As an aside, I&amp;rsquo;m yet to be able to make this work without doing this from the start, adding the ClockKit library manually still produces various not found errors. Anyone with light to shed here is strongly encouraged to drop me a line.&lt;/p&gt;
+
+&lt;p&gt;In the header, we&amp;rsquo;re going to need to add two imports &lt;code&gt;WatchKit/WKExtension.h&lt;/code&gt; and &lt;code&gt;ExtensionDelegate.h&lt;/code&gt; as these will be used when delegating to our extension to fetch the data for our complication. We&amp;rsquo;re also going to add a class method here, which we will use to prompt the complication controller to fetch new data, in this case &lt;code&gt;notifyOfUpdate&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ComplicationController.h&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#import &amp;lt;ClockKit/ClockKit.h&amp;gt;
+#import &amp;lt;WatchKit/WKExtension.h&amp;gt;
+#import &amp;quot;ExtensionDelegate.h&amp;quot;
+
+@interface ComplicationController : NSObject &amp;lt;CLKComplicationDataSource&amp;gt;
+
++ (void) notifyOfUpdate;
+
+@end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In the implementation, you&amp;rsquo;ll notice that the pre-made class comes with a number of stub methods, the majority of the work here is fleshing the appropriate ones out. First, let&amp;rsquo;s look at how we&amp;rsquo;ll grab our data. The method &lt;code&gt;getCurrentTimelineEntryForComplication:withHandler&lt;/code&gt; is what will actually do the fetching of data and updating of the timeline. We don&amp;rsquo;t have direct control over this method and this is instead called on either a scheduled or manually triggered update. We won&amp;rsquo;t focus on the schedule part here, but I may discuss the timeline feature of complications in the future. The first thing to note is that we must get the instance of our extension delegate, this is also handled by the framework:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ExtensionDelegate* extDelegate = (ExtensionDelegate*)[[WKExtension sharedExtension];
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We can then make calls to the delegate in the ususal way, in our case, this is to fetch an object of type &lt;code&gt;UIImage&lt;/code&gt; using the method &lt;code&gt;getComplicationImage&lt;/code&gt; which will be displayed on our complication:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;CLKImageProvider* provider = [CLKImageProvider imageProviderWithOnePieceImage: [extDelegate getComplicationImage]]; 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Note that although I&amp;rsquo;ve used a switch statement here, there are arguments for using an if statement. For clarity and brevity, I&amp;rsquo;ve opted for a switch  statement and only implemented two complication families. Some families have more complex layouts but for now, we&amp;rsquo;ll keep it simple. Below is the method in its entirety.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ComplicationController.m&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;- (void)getCurrentTimelineEntryForComplication:(CLKComplication *)complication withHandler:(void(^)(CLKComplicationTimelineEntry * __nullable))handler {
+
+    CLKComplicationTimelineEntry* entry;
+    NSDate* now = [NSDate date];
+    CLKComplicationTemplate* template;
+    ExtensionDelegate* extDelegate = (ExtensionDelegate*)[[WKExtension sharedExtension] delegate];
+    CLKImageProvider* provider = [CLKImageProvider imageProviderWithOnePieceImage: [extDelegate getComplicationImage]];
+
+    switch (complication.family) {
+
+        case CLKComplicationFamilyModularSmall:
+            template = [[CLKComplicationTemplateModularSmallSimpleImage alloc] init];
+            [(CLKComplicationTemplateModularSmallSimpleImage*) template setImageProvider: provider];
+            entry = [CLKComplicationTimelineEntry entryWithDate: now complicationTemplate: template];
+            break;
+
+        case CLKComplicationFamilyUtilitarianSmall:
+            template = [[CLKComplicationTemplateUtilitarianSmallRingImage alloc] init];
+            [(CLKComplicationTemplateUtilitarianSmallRingImage*) template setImageProvider: provider];
+            entry = [CLKComplicationTimelineEntry entryWithDate: now complicationTemplate: template];
+            break;
+
+        default:
+            break;
+    }
+
+    handler(entry);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;All that remains is to flesh out the &lt;code&gt;notifyOfUpdate&lt;/code&gt; method. It should be noted that updates to complications are &lt;strong&gt;budgeted&lt;/strong&gt; and subject to a daily allowance. There appears to be no indication of what this limit is, but complications exceeding this are prevented from updating until the following day. Right now, it also doesn&amp;rsquo;t appear to possible to identify a particular complication so instead we iterate through the list of active complications (when I tested this only one was returned, but I&amp;rsquo;m yet to test with multiple custom complications).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;+ (void) notifyOfUpdate {
+    CLKComplicationServer* compServer = [CLKComplicationServer sharedInstance];
+    for (CLKComplication* comp in [compServer activeComplications]) {
+        [compServer reloadTimelineForComplication:comp];
+    }
+} 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;extension-delegate:1528dbce263a8191b2123ab27d4b3625&#34;&gt;Extension Delegate&lt;/h3&gt;
+
+&lt;p&gt;To connect the dots and be able to provide data to and update our complication we need to provide an implementation of &lt;code&gt;getComplicationImage&lt;/code&gt;. For the purposes of this example, we&amp;rsquo;re just going to return an image based on a boolean value (in this case, some kind of readiness indicator) but we won&amp;rsquo;t dwell on the details here.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ExtensionDelegate.m&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;- (UIImage*)getComplicationImage {
+    return [UIImage imageNamed: self.isReady ? @&amp;quot;ready.png&amp;quot; : @&amp;quot;waiting.png&amp;quot;];
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Finally, we need to trigger the update. Depending on the implementation, this may be a message or some kind of touch interaction. By way of example, we&amp;rsquo;ll suppose there is a &lt;code&gt;didBecomeReady&lt;/code&gt; method which is called at the appropriate time. We must make sure that we&amp;rsquo;ve remembered to import &lt;code&gt;ComplicationController.h&lt;/code&gt; into our header.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;- (void)didBecomeReady {
+    [ComplicationController notifyOfUpdate];
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;placeholder-template:1528dbce263a8191b2123ab27d4b3625&#34;&gt;Placeholder Template&lt;/h3&gt;
+
+&lt;p&gt;That&amp;rsquo;s it for the bare bones, but it&amp;rsquo;s worth briefly mentioning one more thing here. The method &lt;code&gt;getPlaceholderTemplateForComplication:withHandler&lt;/code&gt; is, as the name suggests, for providing a default template for the complication. This is the one seen when adding it to a watchface. The implementation details are similar to our &lt;code&gt;getCurrentTimelineEntryForComplication:withHandler&lt;/code&gt; method, except we pass a template rather than an entry back to our handler. By implementing this, you&amp;rsquo;ll make sure your user sees a reasonable preview of your complication when adding it to their chosen watchface.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;- (void)getPlaceholderTemplateForComplication:(CLKComplication *)complication withHandler:(void(^)(CLKComplicationTemplate * __nullable complicationTemplate))handler {
+
+    CLKComplicationTemplate* template;
+
+    if (complication.family == CLKComplicationFamilyModularSmall) {
+        template = [[CLKComplicationTemplateModularSmallSimpleImage alloc] init];
+        UIImage* img = [UIImage imageNamed:@&amp;quot;default.png&amp;quot;];
+        CLKImageProvider* provider = [CLKImageProvider imageProviderWithOnePieceImage: img];
+        [(CLKComplicationTemplateModularSmallSimpleImage*) template setImageProvider: provider];
+    }
+
+    handler(template);
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>#porteouverte: Crowdsourcing &amp; Digital Humanitarianism</title>
