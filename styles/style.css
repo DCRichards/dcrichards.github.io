@@ -18,7 +18,8 @@ h1.name {
 }
 
 .panel.info-panel {
-    max-width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 70%;
     min-height: 300px;
     margin: 0 auto;
     border: none;
@@ -41,7 +42,7 @@ h1.name {
 }
 
 .panel.info-panel h3.panel-title .fa.close-button {
-    color: #f71034;
+    color: #e53d57;
 }
 
 .panel.info-panel h3.panel-title .fa {
@@ -49,17 +50,9 @@ h1.name {
 }
 
 .panel.info-panel.panel-default .panel-body {
+    font-family: 'Montserrat', sans-serif;
     width: 100%;
     color: #000;
-}
-
-.panel.info-panel.panel-default .panel-body .title {
-    margin-top: 0px;
-    margin-bottom: 5px;
-    font-size: 2em;
-    font-family: "Andale Mono", AndaleMono, monospace;
-    font-style: italic;
-    color: #141414;
 }
 
 .panel.info-panel.panel-default .panel-body .row {
@@ -78,28 +71,12 @@ h1.name {
     color: #000;
 }
 
-.panel .btn-default {
-    text-shadow: none;
-    background: #038cad;
-    border: 3px solid #038cad;
-    color: #ffffff;
-    -webkit-box-shadow: none;
+.panel .contact-me {
+    font-size: 1.8em;
 }
 
-.panel .btn-default:hover {
-    text-shadow: none;
-    background: #029ec4;
-    border: 3px solid #029ec4;
-    color: #fff;
-    -webkit-box-shadow: none;
-}
-
-.panel .btn-default:focus {
-    text-shadow: none;
-    background: #029ec4;
-    border: 3px solid #029ec4;
-    color: #fff;
-    -webkit-box-shadow: none;
+.panel .fa-circle {
+    color: #444;
 }
 
 /* content */
