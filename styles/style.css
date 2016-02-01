@@ -239,8 +239,9 @@ h1.name {
 }
 
 #projects .elaborated {
-    padding: 3px;
+    padding: 10px;
     color: #555;
+    text-align: justify;
 }
 
 #projects .projects .image {
@@ -255,8 +256,8 @@ h1.name {
     width: 45%;
 }
 
-#projects .projects .santa img {
-    width: 60%;
+#projects .projects .stravadora img {
+    width: 30%;
 }
 
 #projects .projects h2 {
@@ -270,6 +271,10 @@ h1.name {
     text-decoration: none;
 }
 
+#projects .elaborated a {
+    text-decoration: underline;
+    color: #555;
+}
 
 #contact {
     background: #FFF;
