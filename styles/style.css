@@ -222,10 +222,11 @@ h1.name {
     font-size: 1.3em;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 800px) {
     #projects {
-        background-image: url("/resc/projects-sm.jpg");
+        background-image: url("/resc/projects-mob.jpg");
         background-position: top;
+        background-repeat: repeat-y;
     }
 }
 
