@@ -225,7 +225,7 @@ h1.name {
 @media (max-width: 800px) {
     #projects {
         background-image: url("/resc/projects-mob.jpg");
-        background-position: top;
+        background-position: center;
         background-repeat: repeat-y;
     }
 }
