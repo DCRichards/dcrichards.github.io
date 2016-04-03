@@ -25,9 +25,9 @@
 
 &lt;p&gt;&lt;em&gt;TL;DR: A complication is a watchface widget which can be updated and used to access watch app information and display it to the user.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;The above is most of what you need to know about complications from a user perspective. Delving deeper, there a number of complication families which are different shapes and sizes and can be displayed in various positions on a watchface. This useful diagram, taken from the &lt;a href=&#34;https://developer.apple.com/library/watchos/documentation/General/Conceptual/AppleWatch2TransitionGuide/DesigningaComplication.html&#34;&gt;WatchOS 2 documentation&lt;/a&gt; outlines these families.&lt;/p&gt;
+&lt;p&gt;The above is most of what you need to know about complications from a user perspective. Delving deeper, there a number of complication families which are different shapes and sizes and can be displayed in various positions on a watchface. This useful diagram, taken from the &lt;a href=&#34;https://developer.apple.com/library/watchos/documentation/General/Conceptual/WatchKitProgrammingGuide/ComplicationEssentials.html#//apple_ref/doc/uid/TP40014969-CH27-SW1&#34;&gt;WatchOS 2 documentation&lt;/a&gt; outlines these families.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://developer.apple.com/library/watchos/documentation/General/Conceptual/AppleWatch2TransitionGuide/Art/complication_styles_2x.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://developer.apple.com/library/watchos/documentation/General/Conceptual/WatchKitProgrammingGuide/Art/complication_styles_2x.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;complication-controller:1528dbce263a8191b2123ab27d4b3625&#34;&gt;Complication Controller&lt;/h3&gt;
 
