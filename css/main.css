@@ -1,25 +1,29 @@
 * {
-  font-family: "Helvetica", sans-serif;
+  font-family: "Archivo", sans-serif;
+  letter-spacing: 1.5px;
 }
 
 a {
-  color: #222;
+  color: #fff;
+  text-decoration: none;
 }
 
 body {
-  background: #ede9df;
-  color: #222;
+  background: #24252f;
+  color: #fff;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 700px) {
   body {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 
 h1 {
-  color: #222;
+  color: #fafafa;
   font-size: 82px;
+  letter-spacing: 8px;
   margin: 0 0 20px 0;
   padding: 0;
 }
@@ -45,7 +49,7 @@ code {
 
 .wrapper {
   display: table;
-  min-height: 95vh;
+  min-height: 98vh;
   width: 100%;
 }
 
@@ -57,7 +61,11 @@ code {
 
 .content__description {
   margin: 0 auto;
-  max-width: 700px;
+  max-width: 800px;
+}
+
+.content__description p svg {
+  margin-bottom: -5px;
 }
 
 @media screen and (max-width: 700px) {
@@ -66,35 +74,42 @@ code {
   }
 }
 
-.u-spacer {
-  height: 8px;
+.content__social {
+  list-style-type: none;
+  padding: 0;
 }
 
-.u-color-grey {
-  color: #888;
+.content__social li {
+  display: inline-block;
+  padding: 0 8px;
 }
 
-.u-color-light-grey {
-  color: #bbb;
+.content__social li svg {
+  padding: 5px;
+  width: 35;
+  height: 35;
 }
 
-.heart {
-  color: #dd283d;
-}
-
-.ocasta {
-  color: #ed0000;
-  text-decoration: none;
-}
-
-.footer {
-  font-size: 13px;
-  text-align: center;
-  width: 100%;
+.content__social li svg:hover {
+  border-right: 2px solid #fff;
 }
 
 @media screen and (max-width: 700px) {
-  .footer {
-    font-size: 12px;
+  .content__social li {
+    display: inline-block;
+    padding: 0 10px;
   }
+
+  .content__social li svg {
+    width: 25;
+    height: 25;
+  }
+}
+
+.u-spacer {
+  height: 16px;
+}
+
+.u-underline {
+  border-bottom: 2px solid #fff;
 }
