@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  web:
+    build: .
+    volumes:
+      # Read-only is required here or changing the file will remove it.
+      - ./:/usr/share/nginx/html:ro
+    ports:
+      - "9091:80"
