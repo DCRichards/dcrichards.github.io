@@ -1,5 +1,18 @@
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 400;
+  src: url('assets/fonts/archivo/archivo-v6-latin-regular.eot');
+  src: local('Archivo Regular'), local('Archivo-Regular'),
+       url('/assets/fonts/archivo/archivo-v6-latin-regular.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/archivo/archivo-v6-latin-regular.woff2') format('woff2'),
+       url('/assets/fonts/archivo/archivo-v6-latin-regular.woff') format('woff'),
+       url('/assets/fonts/archivo/archivo-v6-latin-regular.ttf') format('truetype'),
+       url('/assets/fonts/archivo/archivo-v6-latin-regular.svg#Archivo') format('svg');
+}
+
 * {
-  font-family: "Archivo", sans-serif;
+  font-family: Archivo, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   letter-spacing: 1.5px;
 }
 
@@ -41,6 +54,11 @@ h2 {
 
 p {
   margin: 8px 0;
+}
+
+p a {
+  color: #fff;
+  border-bottom: 1px dashed #fff;
 }
 
 code {
