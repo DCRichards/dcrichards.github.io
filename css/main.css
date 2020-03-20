@@ -13,7 +13,7 @@
 
 * {
   font-family: Archivo, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
 }
 
 a {
@@ -22,9 +22,9 @@ a {
 }
 
 body {
-  background: #24252f;
-  color: #fff;
-  font-size: 20px;
+  background: #fff;
+  color: #24252f;
+  font-size: 24px;
 }
 
 @media screen and (max-width: 700px) {
@@ -34,7 +34,7 @@ body {
 }
 
 h1 {
-  color: #fafafa;
+  color: #24252f;
   font-size: 82px;
   letter-spacing: 8px;
   margin: 0 0 20px 0;
@@ -57,12 +57,8 @@ p {
 }
 
 p a {
-  color: #fff;
-  border-bottom: 1px dashed #fff;
-}
-
-code {
-  font-family: "Menlo", monospace;
+  color: #24252f;
+  border-bottom: 1.5px dashed #24252f;
 }
 
 .wrapper {
@@ -103,6 +99,7 @@ code {
 }
 
 .content__social li svg {
+  color: #24252f;
   border-bottom: 2px solid transparent;
   height: 35px;
   padding: 5px;
@@ -110,7 +107,7 @@ code {
 }
 
 .content__social li svg:hover {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #24252f;
 }
 
 @media screen and (max-width: 700px) {
@@ -127,8 +124,4 @@ code {
 
 .u-spacer {
   height: 16px;
-}
-
-.u-underline {
-  border-bottom: 2px solid #fff;
 }
