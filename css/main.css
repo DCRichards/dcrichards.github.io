@@ -21,6 +21,12 @@ a {
   text-decoration: none;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 body {
   background: #fff;
   color: #24252f;
@@ -63,7 +69,8 @@ p a {
 
 .wrapper {
   display: table;
-  min-height: 98vh;
+  height: 100vh;
+  height: -webkit-fill-available;
   width: 100%;
 }
 
