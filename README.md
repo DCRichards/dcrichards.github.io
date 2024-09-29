@@ -20,7 +20,7 @@ docker-compose up
 Creates a single replica Kubernetes deployment. Serves on [localhost:9091](http://localhost:9091/)
 
 ```
-docker build -t dcrichards.github.io .
+docker build -t dcrichards.github.io:latest .
 kubectl apply -f deployment.yml
 kubectl port-forward <pod name> 9091:80
 ```
