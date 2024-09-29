@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dcrichards-web
+spec:
+  selector:
+    matchLabels:
+      app: dcrichards-web
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: dcrichards-web
+    spec:
+      containers:
+      - name: web
+        image: dcrichards.github.io:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 80
+        volumeMounts:
+         - name: html
+           mountPath: /usr/share/nginx/html
+      volumes:
+      - name: html
+        hostPath:
+          path: /Users/davidrichards/Development/dcrichards.github.io
+          type: Directory
+
